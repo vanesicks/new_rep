@@ -94,6 +94,23 @@ public class FileIni {
      * @param fieldName
      * @return
      */
+    public boolean getBoolValue(String sectionName, String fieldName) {
+        return getValue(sectionName, fieldName, (String string) -> {
+            try {
+                return Boolean.parseBoolean(string);
+            } catch (NumberFormatException e){
+                throw new IniFormatException("Incorrect value type " + e.getMessage().toLowerCase());
+            }
+        });
+    }
+
+
+    /**
+     * 
+     * @param sectionName
+     * @param fieldName
+     * @return
+     */
     public double getDoubleValue(String sectionName, String fieldName) {
         return getValue(sectionName, fieldName, (String string) -> {
             try {
