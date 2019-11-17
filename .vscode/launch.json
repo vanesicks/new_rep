@@ -1,0 +1,30 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Runner",
+            "request": "launch",
+            "mainClass": "ivan.Runner",
+            "projectName": "lab1"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Main",
+            "request": "launch",
+            "mainClass": "ivan.Main",
+            "projectName": "lab1"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - MainTest",
+            "request": "launch",
+            "mainClass": "main.java.MainTest"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Main",
+            "request": "launch",
+            "mainClass": "main.java.Main"
+        }
+    ]
+}
